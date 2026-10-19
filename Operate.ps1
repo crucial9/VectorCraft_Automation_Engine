@@ -61,14 +61,32 @@ if ($Action -eq "Status") {
     return
 }
 
-if ($Action -eq "Open") {
-    Write-Host "`nOpening existing document through Windows file association..."
-    Invoke-Item -LiteralPath $documentFile
 
-    Write-Host "`n[REQUESTED] Windows was asked to open the existing document." -ForegroundColor Yellow
-    Write-Host "Check VectorCraft and confirm the document is visible."
-    Write-Host "No new document was created by this script."
+if ($Action -eq "Open") {
+    Write-Host "`nOpening existing VectorCraft document..." -ForegroundColor Cyan
+
+    if (-not (Test-Path -LiteralPath $documentFile -PathType Leaf)) {
+        throw "Document not found: $documentFile"
+    }
+
+    $shell = New-Object -ComObject WScript.Shell
+
+    if (-not $shell.AppActivate("VectorCraft")) {
+        throw "Could not activate VectorCraft. Please open VectorCraft first."
+    }
+
+    Start-Sleep -Milliseconds 1000
+    $shell.SendKeys("^o")
+    Start-Sleep -Seconds 2
+    $shell.SendKeys($documentFile)
+    Start-Sleep -Milliseconds 500
+    $shell.SendKeys("{ENTER}")
+    Start-Sleep -Seconds 3
+
+    Write-Host "[SENT] Open command sent. Check VectorCraft." -ForegroundColor Yellow
     return
+}
+
 }
 
 if ($Action -eq "Layout") {
