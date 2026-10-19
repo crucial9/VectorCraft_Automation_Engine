@@ -1,0 +1,56 @@
+{
+  "module": "A4-Resume",
+  "version": 1,
+"styles": {
+    "heading": {
+      "font": "HelveticaNeue-Bold",
+      "fontSize": 24,
+      "tracking": 0,
+      "lineHeight": 28,
+      "color": "#141414"
+    },
+    "body": {
+      "font": "HelveticaNeue",
+      "fontSize": 10,
+      "tracking": 0,
+      "lineHeight": 14,
+      "color": "#444444"
+    }
+  },
+"elements": [
+    {
+      "id": "header-background",
+      "type": "rectangle",
+      "layout": {
+        "x": 20,
+        "y": 20,
+        "width": 170,
+        "height": 35
+      },
+      "fill": {
+        "type": "solid",
+        "color": [240, 240, 240]
+      }
+    },
+    {
+      "id": "resume-heading",
+      "type": "text",
+      "content": "YOUR NAME",
+      "style": "heading",
+      "layout": {
+        "x": 25,
+        "y": 30
+      }
+    },
+    {
+      "id": "resume-subtitle",
+      "type": "text",
+      "content": "DESIGNER  /  VISUAL SYSTEMS",
+      "style": "body",
+      "layout": {
+        "x": 25,
+        "y": 40
+      }
+    }
+  ]
+}

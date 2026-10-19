@@ -1,0 +1,12 @@
+﻿{
+  "module": "A4-Resume",
+  "version": 1,
+  "document": {
+    "category": "Print",
+    "preset": "A4"
+  },
+  "output": {
+    "directory": "Output",
+    "filename": "resume"
+  }
+}

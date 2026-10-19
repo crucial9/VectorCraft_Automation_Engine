@@ -1,0 +1,16 @@
+﻿2026-10-19 07:06:22 | Resume requested.
+2026-10-19 07:06:22 | VS Code workspace requested.
+2026-10-19 07:06:31 | Core scripts loaded.
+2026-10-19 07:06:37 | Resume failed: VectorCraft request failed: Exception calling "ReadLine" with "0" argument(s): "Unable to read data from the transport connection: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."
+2026-10-19 07:09:38 | Resume requested.
+2026-10-19 07:09:38 | VS Code workspace requested.
+2026-10-19 07:09:38 | Core scripts loaded.
+2026-10-19 07:09:38 | Resume succeeded. Module=A4-Resume; Preset=A4
+2026-10-19 17:40:09 | Resume requested.
+2026-10-19 17:40:09 | VS Code workspace requested.
+2026-10-19 17:40:16 | Core scripts loaded.
+2026-10-19 17:40:23 | Resume failed: VectorCraft request failed: Exception calling "ReadLine" with "0" argument(s): "Unable to read data from the transport connection: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."
+2026-10-19 22:00:05 | Resume requested.
+2026-10-19 22:00:05 | VS Code workspace requested.
+2026-10-19 22:00:09 | Core scripts loaded.
+2026-10-19 22:00:15 | Resume failed: VectorCraft request failed: Exception calling "ReadLine" with "0" argument(s): "Unable to read data from the transport connection: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."

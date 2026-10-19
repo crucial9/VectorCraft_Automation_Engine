@@ -1,0 +1,35 @@
+﻿{
+  "project": "VectorCraft-Automation",
+  "stateVersion": 1,
+  "currentStage": "Recovery Foundation",
+  "status": "In progress",
+  "confirmedFiles": [
+    "Launch.ps1",
+    "Core/Connection.ps1",
+    "Core/ConfigEngine.ps1",
+    "Core/DocumentEngine.ps1",
+    "Core/SaveEngine.ps1",
+    "Modules/A4-Resume/config.json"
+  ],
+  "confirmedCapabilities": [
+    "VectorCraft control-port startup/check",
+    "TCP API request function",
+    "Preset lookup",
+    "JSON configuration loading",
+    "Preset resolution",
+    "Document creation command implementation",
+    "Save engine implementation"
+  ],
+  "notYetVerified": [
+    "Recovery workflow after a Windows restart",
+    "Native save format and extension",
+    "Save completion and file integrity",
+    "Reopening a previously saved document automatically"
+  ],
+  "nextAction": "Complete safe session recovery, then validate file.saveAs behavior before extending the design engine.",
+  "rules": [
+    "Do not create a new document during recovery.",
+    "Do not overwrite existing source files automatically.",
+    "Verify API behavior instead of assuming undocumented results."
+  ]
+}
